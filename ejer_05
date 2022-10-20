@@ -1,0 +1,7 @@
+def bisiesto(año):
+    if año %4 == 0:
+        return 'Año bisiesto'
+    else:
+        return 'Año no bisiesto'
+
+print(bisiesto(1992))
