@@ -1,4 +1,4 @@
-
+import pickle
 class Vehiculo:
     color = ''
     purtas = 0
@@ -10,7 +10,6 @@ class Vehiculo:
         return f'El color es {self.color} y el numero de purtas es {self.purtas}'
 
 v = Vehiculo('rojo', 5)
-obj = v
-f = open('ejercicio.txt', 'w')
-f.write(str(obj))
+f = open('ejercicio.txt', 'wb')
+pickle.dump(v, f)
 f.close()
