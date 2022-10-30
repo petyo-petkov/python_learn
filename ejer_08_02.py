@@ -10,6 +10,6 @@ class Vehiculo:
         return f'El color es {self.color} y el numero de purtas es {self.purtas}'
 
 v = Vehiculo('rojo', 5)
-f = open('ejercicio.txt', 'wb')
+f = open('ejercicio.bin', 'wb')
 pickle.dump(v, f)
 f.close()
